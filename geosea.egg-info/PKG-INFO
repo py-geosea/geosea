@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: geosea
+Version: 1.21
+Summary: A processing package for seafloor geodesy
+Home-page: https://github.com/flp-geo/geosea
+Author: Florian Petersen and Katrin Hannemann
+Author-email: flpetersen@geomar.de
+License: UNKNOWN
+Description: #
+        # Dependencies
+        #
+        
+        sciPy: miscellaneous statistical functions
+        
+        matplotlib: for plotting
+        
+        pandas: data structures and data analysis tool
+        
+        numPy: 1.7.1 or higher
+        
+        obspy: for date and time types
+        
+        
+        #
+        # Conversion of raw .csv files to Baselines
+        #
+        
+        # 1. folder structure
+        
+        RAW/    -> csv. files 
+        
+        python/ -> python scripts
+        
+        DATA/   -> output directory of converted station data and baselines
+        
+        shells/ -> shell scripts
+        
+        plots/  -> output directory of plots
+        
+        
+        
+        # Import of geosea module
+        
+        import geosea as geo
+        
+        # Read and Calculate all possible baselines
+        
+        geo.read_proc_bsl(*salinity*,*latitude*,*minmax*)
+        
+        # Further Processing functions
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
